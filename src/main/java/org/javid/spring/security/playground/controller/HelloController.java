@@ -40,4 +40,9 @@ public class HelloController {
     public String admin() {
         return "This is admin";
     }
+
+    @GetMapping("/authorities")
+    public Object authorities(Authentication authentication) {
+        return authentication.getAuthorities();
+    }
 }
