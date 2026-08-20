@@ -20,10 +20,12 @@ public class HelloController {
     public String publicGet() {
         return "This is public request";
     }
+
     @GetMapping("/user")
     public String user() {
         return "This is user";
     }
+
     @GetMapping("/admin")
     public String admin() {
         return "This is admin";
